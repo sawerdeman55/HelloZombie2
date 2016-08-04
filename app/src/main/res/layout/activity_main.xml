@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.discoget.app.hellozombie.MainActivity"
+    android:background="@drawable/splatter_background">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_title"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/zombie_status"
+            android:id="@+id/txtZombieStatus"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+           />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zapZombieButton_string"
+                android:id="@+id/zapZombieButton"
+                android:layout_gravity="bottom"
+                android:onClick="change_text_field"/>
+
+            <Button
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:text="@string/zombie_button"
+                android:id="@+id/btnZombie"
+                android:background="@drawable/my_zombie"
+                android:onClick="check_for_zombies"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
