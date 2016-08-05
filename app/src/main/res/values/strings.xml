@@ -4,4 +4,5 @@
     <string name="app_title">Zombie Checker</string>
     <string name="zombie_status">...scanning....</string>
     <string name="zapZombieButton_string">New Button</string>
+    <string name="zombieCmment">No Awesome Zombies Found!</string>
 </resources>
